@@ -17,16 +17,15 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="usuarios")
-public class Usuario implements UserDetails { //User Detaisl interfasse de contraos de segurança
+@Table(name="users")
+public class User implements UserDetails { //User Detaisl interfasse de contraos de segurança
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //gerada pelo banco
     private Long id;
-
-    private String nome;
+    private String name;
     private String email;
-    private String senha;
+    private String password;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {  //
