@@ -1,7 +1,3 @@
-
--- Migration V5: renomeia a tabela usuarios para users
-
-
 DO $$
 BEGIN
     -- Só renomeia se a tabela 'users' não existir
